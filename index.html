@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="給你與家人的急性腦中風互動衛教指南。認識 FAST 警訊、立即撥打 119、了解急診治療與照護。">
+  <title>把握當下，守護腦健康｜急性腦中風衛教指南</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<div class="urgent-banner"><span class="pulse" aria-hidden="true"></span><span>突然臉歪、手無力、說不清？<strong> 別等待，立即打 119。</strong></span><a href="tel:119" aria-label="撥打 119 緊急求救">撥打 119 ↗</a></div>
+<header class="site-header">
+  <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span><span>腦健康守護指南<small>STROKE CARE GUIDE</small></span></a>
+  <nav id="navigation" aria-label="主要導覽"><a href="#recognize">認識警訊</a><a href="#action">緊急應對</a><a href="#treatment">就醫與治療</a><a href="#care">照護與預防</a><a href="#quiz">互動小測驗</a></nav>
+  <div class="header-actions"><button id="font-toggle" type="button" aria-pressed="false" aria-label="放大文字">大字 A<span>＋</span></button><button id="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="開啟導覽選單">☰</button></div>
+  <div class="reading-track"><div id="reading-progress"></div></div>
+</header>
+<main id="main">
+<section id="top" class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span></span> 給你，也給你在乎的人</div><p class="hero-kicker">急性腦中風衛教互動指南</p><h1>把握當下，<br>守護<span class="underline">腦健康。</span></h1><p id="hero-description" class="hero-description">當中風突然發生，懂得辨識、及時行動，<br class="desktop-break">就是你能為家人做的第一件事。</p><div class="hero-buttons"><a id="hero-primary" class="button primary" href="#recognize">認識中風警訊 <span>↗</span></a><a class="text-link" href="#quiz">我想試試情境測驗 →</a></div><div class="hero-foot"><span class="mini-cross">＋</span> 簡單理解・一起練習・安心照護</div></div>
+  <div class="hero-art">
+    <div class="art-top-label"><span class="little-sun">☀</span> 多一分了解，多一份守護</div>
+    <svg class="family-scene" viewBox="0 0 600 530" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">家人的陪伴與守護</title><desc id="scene-desc">溫暖的居家場景，家屬陪伴坐在椅子上的長者，旁邊有電話求助圖示。這是一般衛教示意插畫。</desc>
+      <defs><pattern id="stripes" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M0 0v22" stroke="#e9dcb7" stroke-width="2"/></pattern></defs>
+      <path d="M48 480V230C48 97 150 28 288 28s248 75 248 202v250" fill="#f0e4c6"/><path d="M78 470V235C78 121 160 58 288 58s218 67 218 177v235" fill="url(#stripes)"/>
+      <path d="M364 79h102v183H364z" fill="#fffaf0" stroke="#d8caab" stroke-width="7"/><path d="M415 80v180m-49-91h99" stroke="#d8caab" stroke-width="5"/>
+      <circle cx="451" cy="118" r="20" fill="#e5b94d"/><path d="M373 224q29-68 60-15l27-32 10 83H366z" fill="#bac5a4"/>
+      <ellipse cx="292" cy="479" rx="260" ry="23" fill="#daceb2"/>
+      <path d="M71 412q-38-66-19-101 42 16 40 80-7-96 24-111 30 39-2 124 14-69 47-63 10 43-34 74" fill="#7d9472"/><path d="M73 410h64l-10 68H84z" fill="#c48762"/>
+      <rect x="152" y="305" width="230" height="132" rx="28" fill="#a6b198"/><rect x="144" y="360" width="244" height="67" rx="20" fill="#8e9e82"/><path d="M164 425l-8 55m210-55 8 55" stroke="#735c49" stroke-width="13" stroke-linecap="round"/>
+      <path d="M211 362l-11 98 38 5 33-94m9-7 15 95 35 4-5-111" fill="#696b60"/><path d="M202 454l-9 22q19 11 51 4l-5-23m55-3-1 24q24 10 49 0l-15-22" fill="#51483e"/>
+      <path d="M208 249q37-18 73-1l35 104q-45 32-116 6z" fill="#e3af61"/>
+      <path d="M213 259l-28 68 45 21m51-88 30 59 45-35" fill="none" stroke="#e5b27c" stroke-width="24" stroke-linecap="round"/>
+      <path d="M220 244v-27h42v29" fill="#dba677"/><ellipse cx="242" cy="184" rx="47" ry="55" fill="#edc092"/>
+      <path d="M197 190q-13-58 22-69 52-26 71 27l-1 34-12-23q-20 10-39-13-3 21-28 23l-4 25" fill="#d7d8cb"/><path d="M195 161q-18-18 0-33 2-31 34-28 35-17 47 11 32 1 26 35l-20 7q-18-24-38-15-21 16-49 23" fill="#d7d8cb"/>
+      <g fill="none" stroke="#766254" stroke-width="3"><rect x="207" y="179" width="29" height="20" rx="8"/><rect x="245" y="179" width="29" height="20" rx="8"/><path d="M236 186h9m-15 25q12 9 24-1"/></g>
+      <path d="M375 321l-12 143h30l28-101 14 101h30l-2-150" fill="#8c7861"/><path d="M364 461l-14 20h48l-5-19m43-1-2 20h45l-14-20" fill="#5e5145"/>
+      <path d="M382 199q36-18 64 8l23 122q-49 21-99-2z" fill="#f7f1df"/><path d="M384 208l-28 65-34 7m121-66 28 55-24 25" fill="none" stroke="#efc49d" stroke-width="22" stroke-linecap="round"/>
+      <path d="M393 194v-26h33v29" fill="#e6b58c"/><ellipse cx="410" cy="139" rx="38" ry="46" fill="#efc49d"/>
+      <path d="M374 148q-19-64 25-70 59-8 54 64l-19-29q-34 18-45 1l-6 34z" fill="#5a5146"/><path d="M443 128q24 9 14 39l-18-17" fill="#5a5146"/>
+      <path d="M392 142h4m21 0h4m-22 18q11 7 20-1" stroke="#766254" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M317 279q11-17 22-5l-3 14q-17 8-22-1" fill="#efc49d"/>
+      <g transform="translate(101 187) rotate(-9)"><rect width="73" height="89" rx="16" fill="#fffaf0" stroke="#e0d4b4" stroke-width="2"/><path d="M22 22q-6 24 24 42l10-13-14-9-7 5q-8-4-9-13l7-4-6-13z" fill="#aa4e3c"/><circle cx="60" cy="9" r="17" fill="#aa4e3c"/><path d="M53 9h14m-7-7v14" stroke="#fff" stroke-width="3"/></g>
+    </svg>
+    <div class="art-note"><span class="note-symbol">♡</span><div><strong>及早辨識，就是最好的開始</strong><small>中風可能發生在任何年齡</small></div></div>
+    <span class="art-spark" aria-hidden="true">✳</span>
+  </div>
+  <div class="hero-pagination"><div class="slide-controls"><button id="slide-prev" aria-label="上一個主題">←</button><span id="slide-counter">01 / 03</span><button id="slide-next" aria-label="下一個主題">→</button></div><div class="slide-dots" aria-label="選擇首頁主題"><button class="active" aria-label="主題 1：辨識警訊" aria-pressed="true" data-slide="0"></button><button aria-label="主題 2：緊急應對" aria-pressed="false" data-slide="1"></button><button aria-label="主題 3：照護與陪伴" aria-pressed="false" data-slide="2"></button></div><span class="scroll-hint">往下探索衛教內容 ↓</span></div>
+</section>
+<div class="chapter-wrap"><nav class="chapters" aria-label="衛教主題"><a href="#recognize"><span>01</span> 辨識警訊 ↗</a><a href="#action"><span>02</span> 立即行動 ↗</a><a href="#treatment"><span>03</span> 就醫治療 ↗</a><a href="#care"><span>04</span> 照護陪伴 ↗</a><a href="#quiz"><span>05</span> 情境練習 ↗</a></nav></div>
+<section id="recognize" class="section container">
+  <div class="section-heading"><div><p class="eyebrow">01 / RECOGNIZE THE SIGNS</p><h2>記住三個動作，<br>發現中風的關鍵警訊。</h2></div><p>中風的特徵往往是「突然」出現。<br>只要出現其中一項異常，就立即求救。<br><a class="source-inline" href="#references">衛教來源 01・02 ↗</a></p></div>
+  <div class="fast-grid">
+    <article class="fast-card"><div class="fast-top"><span class="fast-letter">F</span><span>FACE / 臉部</span></div><div class="face-icon" aria-hidden="true">◡</div><h3>微笑</h3><p>請對方露齒微笑，<br>觀察是否突然臉歪、嘴角不對稱。</p><span class="card-caption">留意：單側臉部下垂</span></article>
+    <article class="fast-card"><div class="fast-top"><span class="fast-letter">A</span><span>ARM / 手臂</span></div><svg class="fast-svg" viewBox="0 0 120 90" aria-hidden="true"><circle cx="60" cy="20" r="12"/><path d="M60 37v46M59 48L17 30m43 19 41 12"/></svg><h3>舉手</h3><p>請對方雙手向前平舉，<br>觀察是否單側無力、手臂下垂。</p><span class="card-caption">留意：突然單側無力</span></article>
+    <article class="fast-card"><div class="fast-top"><span class="fast-letter">S</span><span>SPEECH / 說話</span></div><div class="speech-icon" aria-hidden="true">你好<span>…</span></div><h3>說你好</h3><p>請對方說一句簡單的話，<br>留意口齒不清、說不出或聽不懂。</p><span class="card-caption">留意：突然語言異常</span></article>
+    <article class="fast-card time-card"><div class="fast-top"><span class="fast-letter">T</span><span>TIME / 搶時間</span></div><div class="time-number">119<span>立即求救</span></div><h3>快打 119</h3><p>記下症狀開始時間，<br>告訴救護人員「懷疑腦中風」。</p><a href="tel:119" class="call-link">撥打 119 ↗</a></article>
+  </div>
+  <div class="notice"><span aria-hidden="true">！</span><p><strong>還要留意其他突然出現的症狀</strong><br>走路不穩、失去平衡、視力改變，或原因不明的劇烈頭痛，也可能是警訊。<strong>即使症狀已消失，仍需立即就醫；沒有上述三項表現，也不能排除中風。</strong></p></div>
+</section>
+<section id="action" class="action-section"><div class="container action-layout"><div class="action-intro"><p class="eyebrow">02 / EVERY MOMENT MATTERS</p><h2>懷疑中風，<br>現在就行動。</h2><p>不必先確認是不是中風。<br>讓救護與醫療團隊接手判斷。</p><a class="button emergency" href="tel:119">立即撥打 119 <span>↗</span></a><a class="source-inline" href="#references">衛教來源 01・02・03 ↗</a></div><div class="action-steps"><article><span class="step-number">1</span><div><h3>打 119，說明地點與症狀</h3><p>告知「懷疑腦中風」，依派遣員指示處理。不要自行開車就醫，也不要等睡一覺再看看。</p></div></article><article><span class="step-number">2</span><div><h3>記下時間，準備用藥資訊</h3><p>記錄症狀何時開始；若不確定，提供「最後一次看起來正常」的時間，例如睡前。準備藥袋，尤其是抗凝血藥資訊，但不要因此延誤求救。</p></div></article><article><span class="step-number">3</span><div><h3>陪在身旁，不餵食、不自行給藥</h3><p>不要給食物、水或阿斯匹靈。觀察意識與呼吸，避免拉扯無力的手腳；若無反應、沒有正常呼吸，立即告知 119 並依指示急救。</p></div></article></div></div></section>
+<section id="treatment" class="section container">
+  <div class="section-heading"><div><p class="eyebrow">03 / UNDERSTAND THE CARE</p><h2>到醫院之後，<br>醫療團隊會做什麼？</h2></div><p>中風可能是血管阻塞，也可能是出血。<br>需要檢查才能分辨，治療方式並不相同。<br><a class="source-inline" href="#references">衛教來源 04・05 ↗</a></p></div>
+  <div class="treatment-tabs" role="tablist" aria-label="就醫流程"><button id="tab-assessment" role="tab" aria-controls="panel-assessment" aria-selected="true" tabindex="0" data-treatment="assessment">01 急診評估</button><button id="tab-ischemic" role="tab" aria-controls="panel-ischemic" aria-selected="false" tabindex="-1" data-treatment="ischemic">02 缺血性中風</button><button id="tab-bleeding" role="tab" aria-controls="panel-bleeding" aria-selected="false" tabindex="-1" data-treatment="bleeding">03 出血性中風</button></div>
+  <div id="panel-assessment" class="treatment-panel" role="tabpanel" aria-labelledby="tab-assessment" tabindex="0"><div class="treatment-visual"><span class="scan-symbol" aria-hidden="true">＋</span><span>先評估，再決定治療</span></div><div><span class="tag">急診評估</span><h3>找出原因，爭取治療機會</h3><p>團隊會評估症狀、意識、血糖與生命徵象，並安排腦部影像等檢查，確認有無出血與血管阻塞。</p><ul><li>提供發作時間或最後正常時間。</li><li>告知平常用藥、過敏與近期手術等重要資訊。</li><li>配合檢查，先不要自行餵食或給藥。</li></ul></div></div>
+  <div id="panel-ischemic" class="treatment-panel" role="tabpanel" aria-labelledby="tab-ischemic" tabindex="0" hidden><div class="treatment-visual"><span class="vessel blocked" aria-hidden="true"><i></i></span><span>血管阻塞，血流受阻</span></div><div><span class="tag">缺血性中風</span><h3>由醫師評估溶栓或血管內取栓</h3><p>部分病人可透過靜脈血栓溶解治療，或以導管取出大血管中的血栓，幫助恢復血流。</p><ul><li>是否適合，須依發作時間、影像與身體狀況判斷。</li><li>並非每位病人都適用，治療有各自的效益與風險。</li><li>越早就醫越好，不自行判定「超時就不用去」。</li></ul></div></div>
+  <div id="panel-bleeding" class="treatment-panel" role="tabpanel" aria-labelledby="tab-bleeding" tabindex="0" hidden><div class="treatment-visual"><span class="vessel bleeding" aria-hidden="true"><i></i></span><span>血管破裂，造成出血</span></div><div><span class="tag">出血性中風</span><h3>監測病情，評估控制出血與手術</h3><p>醫療團隊會依出血位置、範圍與病況，安排血壓控制、藥物調整、密切監測，必要時評估手術或其他處置。</p><ul><li>治療不同於缺血性中風。</li><li>務必提供是否使用抗凝血或抗血小板藥的資訊。</li><li>不要自行加藥、停藥或嘗試偏方。</li></ul></div></div>
+  <p class="small-note">以上為一般流程介紹，不用來判斷個人治療資格；實際處置由醫療團隊依病況說明與決定。</p>
+</section>
+<section id="care" class="care-section section"><div class="container"><div class="section-heading"><div><p class="eyebrow">04 / CARE, TOGETHER</p><h2>接下來的路，<br>一步一步，陪你走。</h2></div><p>急性期先穩定病況，<br>復健與日常照護再依個別狀況安排。<br><a class="source-inline" href="#references">衛教來源 05・06・07 ↗</a></p></div><div class="care-layout"><div class="care-accordion"><details open><summary><span>01</span> 吞嚥安全，先評估再進食 <i aria-hidden="true">＋</i></summary><div><p>中風可能影響吞嚥。醫療人員確認可以安全進食前，不自行餵水、食物或口服藥。</p><p>開始進食後，食物質地、姿勢與協助方式依團隊指導；若嗆咳、聲音變濕或呼吸不適，停止餵食並告知醫療人員。</p></div></details><details><summary><span>02</span> 復健與移位，跟著專業指導 <i aria-hidden="true">＋</i></summary><div><p>復健起始時間與強度需由團隊評估。家屬先學習安全翻身、移位與協助活動的方法，不拉扯患側手臂，不勉強自行下床。</p><p>溝通時放慢速度，一次說一件事，留時間讓對方回應。</p></div></details><details><summary><span>03</span> 預防再中風，持續回診與用藥 <i aria-hidden="true">＋</i></summary><div><p>依醫囑規律服藥與回診，管理血壓、血糖、血脂及心房顫動等風險；不要自行停藥或調整劑量。</p><p>戒菸、均衡飲食與適合個人能力的活動，都是長期照護的一部分。活動與飲食安排請與團隊討論。</p></div></details></div><aside class="checklist"><span class="tag">和醫療團隊一起確認</span><h3>返家前的小清單</h3><p>把不確定的事問清楚，<br>讓照護更有方向。</p><label><input type="checkbox"> 我知道每種藥怎麼吃</label><label><input type="checkbox"> 我知道安全進食的方法</label><label><input type="checkbox"> 我學會安全移位與照護</label><label><input type="checkbox"> 我知道回診與復健安排</label><label><input type="checkbox"> 我記得再出現警訊要打 119</label><div id="checklist-status" role="status">已確認 0 / 5 項</div><button id="print-button" class="text-link" type="button">列印這份衛教指南 ↗</button><small>勾選僅供當次閱讀，不會上傳或保存。</small></aside></div></div></section>
+<section id="quiz" class="section container quiz-section"><div class="quiz-intro"><p class="eyebrow">05 / A LITTLE PRACTICE</p><h2>如果是你，<br>會怎麼做？</h2><p>用三個日常情境，<br>把剛學到的知識變成行動。</p><p class="small-note">這是衛教練習，不是中風篩檢。<br>若正有疑似症狀，請立即打 119。</p></div><div class="quiz-card"><div class="quiz-top"><span class="tag">情境小測驗</span><span id="quiz-progress">第 1 題，共 3 題</span></div><div class="quiz-track"><span id="quiz-progress-bar"></span></div><h3 id="quiz-question" tabindex="-1"></h3><div id="quiz-options" class="quiz-options"></div><div id="quiz-feedback" class="quiz-feedback" role="status" hidden></div><button id="quiz-next" class="button primary" type="button" hidden>下一題 →</button><div id="quiz-result" hidden><div class="result-symbol" aria-hidden="true">✳</div><h3 id="quiz-score"></h3><p>記住最重要的事：<strong>突然出現中風警訊，立即打 119。</strong><br>即使症狀緩解，也要立即就醫。</p><button id="quiz-restart" class="button primary">再練習一次 ↺</button></div></div></section>
+<section class="closing"><span aria-hidden="true">♡</span><h2>多一點了解，<br>就多一份守護的力量。</h2><p>現在，將「微笑、舉手、說你好」記在心裡。<br>需要的那一刻，及時為自己與家人行動。</p><a class="button primary" href="#recognize">再看一次中風警訊 ↑</a></section>
+<section id="references" class="references container"><details><summary>資料來源與閱讀提醒 <span>＋</span></summary><div><p>本網站為一般民眾與家屬的健康教育資訊，不取代診斷、緊急救護指示或個別醫療建議。內容查閱日期：2026 年 10 月 17 日。國外資料中的緊急電話已依台灣情境使用 119。</p><ol><li><a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4809&pid=18162" target="_blank" rel="noopener noreferrer">國民健康署：腦中風危險因子與 FAST 警訊 ↗</a></li><li><a href="https://www.stroke.org/en/about-stroke/stroke-symptoms" target="_blank" rel="noopener noreferrer">American Stroke Association：中風症狀與警訊 ↗</a></li><li><a href="https://strokefoundation.org.au/about-stroke/learn/signs-of-stroke/what-to-do-while-you-wait-for-an-ambulance" target="_blank" rel="noopener noreferrer">Stroke Foundation：等待救護車時如何處理 ↗</a></li><li><a href="https://www.stroke.org/en/about-stroke/types-of-stroke" target="_blank" rel="noopener noreferrer">American Stroke Association：中風類型與治療 ↗</a></li><li><a href="https://www.stroke.org/en/about-stroke/types-of-stroke/ischemic-stroke-clots" target="_blank" rel="noopener noreferrer">American Stroke Association：缺血性中風與急性期照護 ↗</a></li><li><a href="https://www.stroke.org/en/about-stroke/effects-of-stroke/physical-effects/dysphagia" target="_blank" rel="noopener noreferrer">American Stroke Association：吞嚥障礙 ↗</a></li><li><a href="https://www.stroke.org/en/life-after-stroke/preventing-another-stroke" target="_blank" rel="noopener noreferrer">American Stroke Association：預防再次中風 ↗</a></li><li><a href="https://www.stroke.org/en/help-and-support/resource-library/lets-talk-about-stroke/rehabilitation" target="_blank" rel="noopener noreferrer">American Stroke Association：中風復健團隊 ↗</a></li></ol><p>插畫為原創衛教示意，並非真實病人或醫療情境紀錄。全站不收集、傳送或儲存個人醫療資料。正式提供臨床衛教前，建議由使用單位醫護人員審閱。</p></div></details></section>
+</main>
+<footer class="site-footer container"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span><span>腦健康守護指南<small>每一份理解，都是守護的開始。</small></span></a><p>急性腦中風衛教互動指南<br>© 2026 · 用知識陪伴，用行動守護。</p><a href="#top" class="back-top" aria-label="回到頁首">↑</a></footer>
+</body>
+</html>
