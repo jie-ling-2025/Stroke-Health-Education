@@ -4,6 +4,8 @@
 
 ## 開啟
 
+線上網站：<https://jie-ling-2025.github.io/Stroke-Health-Education/>
+
 直接用瀏覽器開啟本資料夾的 `index.html`，即可離線使用。或在 PowerShell 切換至下載的專案資料夾後執行：
 
 ```powershell
@@ -23,7 +25,7 @@ node preview.cjs
 
 勾選及測驗僅存在當次頁面記憶體，重新整理會重設。所有 `tel:119` 連結會交由裝置的電話功能處理，使用者仍需確認撥出。桌機若沒有電話程式，請直接使用手機撥打 119。
 
-資料來源列於網站頁尾；查閱日期 2026-10-17。網站為一般衛教，正式臨床使用前仍需使用單位醫護審閱。GitHub 原始碼同步與網站公開部署分開處理，本專案未啟用 GitHub Pages。
+資料來源列於網站頁尾；查閱日期 2026-10-17。網站為一般衛教，正式臨床使用前仍需使用單位醫護審閱。本專案經授權公開原始碼，並使用 GitHub Pages 發布 `main` 分支的根目錄；不需要額外建置。
 
 ## 驗證
 
@@ -35,4 +37,4 @@ node preview.cjs
 
 ## 原始碼
 
-GitHub 儲存庫：<https://github.com/jie-ling-2025/Stroke-Health-Education>。私人儲存庫需登入具有權限的 GitHub 帳號才能開啟。
+GitHub 儲存庫：<https://github.com/jie-ling-2025/Stroke-Health-Education>。
